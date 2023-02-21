@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-red {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+
+.box-red {
+    background-color: #f00;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.box-red:hover {
+    background-color: #ff0;
+/* transistion-property - é a propriedade css que queremos aplicar a transição */
+    transition-property: background-color, width;
+/* transition-duration - é o tempo de duração da transição */
+    transition-duration: 2s;
+    width: 200px;
+}

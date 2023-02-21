@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+.line {
+    width: 100%;
+    background-color: blue;
+    height: 25px;
+    margin-bottom: 10px;
+
+    transition: width;
+    transition-duration: 1s;
+}
+
+body:hover .line {
+    width: 20px;
+    background-color: rgb(255, 0, 234);
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
