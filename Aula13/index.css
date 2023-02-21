@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 100%;
+    left: calc(100% - 100px);
+
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    /* o forwards diz que o objeto .ball vai mandar os negocio do keyframe em "to" */
+    animation-fill-mode: forwards;
+    /* o backwards diz pra animaçao manter o primeiro e depois de 2s de delay ir pro "to" */
+    /* temos tambem o "both" que vai manter o começo e o fim pelo delay */
+}
+
+@keyframes example {
+    0%{
+        left: 0px;
+        background-color: cyan;
+    }
+
+    50%{
+        left: 200px;
+        background-color: yellow;
+    }
+
+    100%{
+        left: calc(100% - 100px);
+    }
+}

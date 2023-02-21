@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.linear{
+    animation-timing-function: linear;
+}
+
+.ease{
+    animation-timing-function: ease;
+}
+
+.ease-in{
+    animation-timing-function: ease-in;
+}
+
+.ease-out{
+    animation-timing-function: ease-out;
+}
+
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    to{
+        left: 0px;
+    }
+
+    from{
+        /* O comando abaixo faz ele ir pra direita ate sobrar 100px */
+        left: calc(100% - 100px);
+    }
+}
